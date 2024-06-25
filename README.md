@@ -1,8 +1,8 @@
 # from-nand
-Implementation of an Arithmetic Logic Unit (ALU) specification in Verilog HDL built upon NAND logic gates.
+Implementation of sample Arithmetic Logic Unit (ALU) specification in Verilog HDL built upon NAND logic gates.
 
 
-Specification taken from [Nand2Tetris book](https://www.nand2tetris.org/_files/ugd/44046b_f0eaab042ba042dcb58f3e08b46bb4d7.pdf)
+Sample specification is taken from [Nand2Tetris book](https://www.nand2tetris.org/_files/ugd/44046b_f0eaab042ba042dcb58f3e08b46bb4d7.pdf)
 
 ![ALU](/img/alu.png "ALU")
 
@@ -33,4 +33,17 @@ Function:  if zx     then x=0
                      else ng=0
 
 Comment:   Overflow is neither detected nor handled 
+```
+
+### Implementation dependency
+```
+Basic Gates:
+Not ← Nand
+And ← Not, Nand
+Or ← Not, And
+Nor ← Not, Or
+Xor ???
+
+
+Complex Gates:
 ```

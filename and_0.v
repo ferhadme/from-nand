@@ -1,5 +1,6 @@
 `include "not_0.v"
 
+// And(a, b) = Not(Nand(a, b))
 module and_0(
   input wire a,
   input wire b,
