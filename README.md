@@ -37,13 +37,9 @@ Comment:   Overflow is neither detected nor handled
 
 ### Implementation dependency
 ```
-Basic Gates:
 Not ← Nand
 And ← Not, Nand
-Or ← Not, And
-Nor ← Not, Or
-Xor ???
-
-
-Complex Gates:
+Or ← And, Not
+Xor ← Or, And, Not
+Mux ← Or, And, Not
 ```
