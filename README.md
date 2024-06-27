@@ -20,17 +20,17 @@ Outputs:   out[16]       16-bit output
            zr            True iff out=0
            ng            True iff out<0
 
-Function:  if zx     then x=0
-           if nx     then x=!x
-           if zy     then y=0
-           if ny     then y=!y
-           if f      then out=x+y
-                     else out=x&y
-           if no     then out=!out
-           if out=0  then zr=1
-                     else zr=0
-           if out<0  then ng=1
-                     else ng=0
+Function:  if zx         then x=0
+           if nx         then x=!x
+           if zy         then y=0
+           if ny         then y=!y
+           if f          then out=x+y
+                         else out=x&y
+           if no         then out=!out
+           if out=0      then zr=1
+                         else zr=0
+           if out<0      then ng=1
+                         else ng=0
 
 Comment:   Overflow is neither detected nor handled 
 ```
