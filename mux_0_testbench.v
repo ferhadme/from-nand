@@ -1,4 +1,3 @@
-`include "mux_0.v"
 `include "assert.v"
 
 module mux_0_testbench;

@@ -1,4 +1,3 @@
-`include "full_adder.v"
 `include "assert.v"
 
 module full_adder_testbench;

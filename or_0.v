@@ -1,5 +1,3 @@
-`include "and_0.v"
-
 // Or(a, b) = Not(And(Not(a), Not(b)))
 module or_0(
   input wire a,

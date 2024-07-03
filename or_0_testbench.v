@@ -1,4 +1,3 @@
-`include "or_0.v"
 `include "assert.v"
 
 module or_0_testbench;

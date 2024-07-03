@@ -1,5 +1,3 @@
-`include "xor_0.v"
-
 // a + b = sum (carry)
 // sum   = a xor b
 // carry = a and b

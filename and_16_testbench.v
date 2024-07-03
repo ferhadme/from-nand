@@ -1,4 +1,3 @@
-`include "and_16.v"
 `include "assert.v"
 
 module and_16_testbench;
@@ -22,5 +21,10 @@ module and_16_testbench;
     b=16'b1001100001110110;
     #10;
     `assert(out, 16'b0001000000110100);
+
+    a=16'b1111111111111110;
+    b=16'b1111111111111111;
+    #10;
+    `assert(out, 16'b1111111111111111);
   end
 endmodule

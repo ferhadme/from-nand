@@ -1,5 +1,3 @@
-`include "or_0.v"
-
 // Mux(a, b, sel) = if sel=0 then a
 //                           else b
 // (sel=0 -> a) and (sel=1 -> b)

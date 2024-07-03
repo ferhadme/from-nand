@@ -1,5 +1,3 @@
-`include "half_adder.v"
-
 // a + b + cin = sum (carry)
 // sum0 (carry0) = a half_adder b
 // sum (carry1) = sum0 + cin

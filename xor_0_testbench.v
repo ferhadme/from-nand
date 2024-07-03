@@ -1,4 +1,3 @@
-`include "xor_0.v"
 `include "assert.v"
 
 module xor_0_testbench;

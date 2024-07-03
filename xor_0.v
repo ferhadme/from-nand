@@ -1,5 +1,3 @@
-`include "or_0.v"
-
 // a xor b = ((not a) and b) or (a and (not b))
 module xor_0(
   input wire a,

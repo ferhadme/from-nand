@@ -1,5 +1,3 @@
-`include "full_adder.v"
-
 module add_16(
   input wire [15:0] a,
   input wire [15:0] b,

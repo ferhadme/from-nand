@@ -1,5 +1,3 @@
-`include "not_0.v"
-
 module not_16(
   input wire [15:0] in,
   output wire [15:0] out

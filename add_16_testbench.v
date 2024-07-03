@@ -1,4 +1,3 @@
-`include "add_16.v"
 `include "assert.v"
 
 module add_16_testbench;

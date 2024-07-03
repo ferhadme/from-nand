@@ -1,5 +1,3 @@
-`include "and_0.v"
-
 module and_16(
   input wire [15:0] a,
   input wire [15:0] b,
