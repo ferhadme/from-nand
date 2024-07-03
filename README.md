@@ -42,4 +42,12 @@ And ← Not, Nand
 Or ← And, Not
 Xor ← Or, And, Not
 Mux ← Or, And, Not
+Not(16bit) ← Not
+And(16bit) ← And
+Or(16bit) ← Or
+Mux(16bit) ← Mux
+Or(16way) ← Or
+HalfAdder ← And, Xor
+FullAdder ← HalfAdder, Or
+Add16 ← FullAdder, HalfAdder
 ```
