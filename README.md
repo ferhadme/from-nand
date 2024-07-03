@@ -49,5 +49,5 @@ Mux(16bit) ← Mux
 Or(16way) ← Or
 HalfAdder ← And, Xor
 FullAdder ← HalfAdder, Or
-Add16 ← FullAdder, HalfAdder
+Adder(16bit) ← FullAdder, HalfAdder
 ```
