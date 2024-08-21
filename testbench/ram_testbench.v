@@ -1,4 +1,4 @@
-`include "assert.v"
+`include "testbench/assert.v"
 
 module ram_testbench;
   reg clk;

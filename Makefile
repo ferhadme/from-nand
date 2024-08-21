@@ -1,47 +1,53 @@
+LOGICDIR = logic
+ADDERDIR = adders
+MEMDIR = memory
+TESTBENCHDIR = testbench
+SOURCES = $(wildcard *.v) $(wildcard $(LOGICDIR)/*.v) $(wildcard $(ADDERDIR)/*.v) $(wildcard $(MEMDIR)/*.v)
+
 not:
-	iverilog not_0.v not_0_testbench.v && ./a.out
+	iverilog $(SOURCES) $(TESTBENCHDIR)/not_0_testbench.v && ./a.out
 
 and:
-	iverilog not_0.v and_0.v and_0_testbench.v && ./a.out
+	iverilog $(SOURCES) $(TESTBENCHDIR)/and_0_testbench.v && ./a.out
 
 or:
-	iverilog not_0.v and_0.v or_0.v or_0_testbench.v && ./a.out
+	iverilog $(SOURCES) $(TESTBENCHDIR)/or_0_testbench.v && ./a.out
 
 xor:
-	iverilog not_0.v and_0.v or_0.v xor_0.v xor_0_testbench.v && ./a.out
+	iverilog $(SOURCES) $(TESTBENCHDIR)/xor_0_testbench.v && ./a.out
 
 mux:
-	iverilog not_0.v and_0.v or_0.v mux_0.v mux_0_testbench.v && ./a.out
+	iverilog $(SOURCES) $(TESTBENCHDIR)/mux_0_testbench.v && ./a.out
 
 not16:
-	iverilog not_0.v not_16.v not_16_testbench.v && ./a.out
+	iverilog $(SOURCES) $(TESTBENCHDIR)/not_16_testbench.v && ./a.out
 
 and16:
-	iverilog not_0.v and_0.v and_16.v and_16_testbench.v && ./a.out
+	iverilog $(SOURCES) $(TESTBENCHDIR)/and_16_testbench.v && ./a.out
 
 or16:
-	iverilog not_0.v and_0.v or_0.v or_16.v or_16_testbench.v && ./a.out
+	iverilog $(SOURCES) $(TESTBENCHDIR)/or_16_testbench.v && ./a.out
 
 mux16:
-	iverilog not_0.v and_0.v or_0.v mux_0.v mux_16.v mux_16_testbench.v && ./a.out
+	iverilog $(SOURCES) $(TESTBENCHDIR)/mux_16_testbench.v && ./a.out
 
 or16way:
-	iverilog not_0.v and_0.v or_0.v or_16_way.v or_16_way_testbench.v && ./a.out
+	iverilog $(SOURCES) $(TESTBENCHDIR)/or_16_way_testbench.v && ./a.out
 
 half_adder:
-	iverilog not_0.v and_0.v or_0.v xor_0.v half_adder.v half_adder_testbench.v && ./a.out
+	iverilog $(SOURCES) $(TESTBENCHDIR)/half_adder_testbench.v && ./a.out
 
 full_adder:
-	iverilog not_0.v and_0.v or_0.v xor_0.v half_adder.v full_adder.v full_adder_testbench.v && ./a.out
+	iverilog $(SOURCES) $(TESTBENCHDIR)/full_adder_testbench.v && ./a.out
 
 add16:
-	iverilog not_0.v and_0.v or_0.v xor_0.v half_adder.v full_adder.v add_16.v add_16_testbench.v && ./a.out
+	iverilog $(SOURCES) $(TESTBENCHDIR)/add_16_testbench.v && ./a.out
 
 register:
-	iverilog register.v register_testbench.v && ./a.out
+	iverilog $(SOURCES) $(TESTBENCHDIR)/register_testbench.v && ./a.out
 
 ram:
-	iverilog ram.v ram_testbench.v && ./a.out
+	iverilog $(SOURCES) $(TESTBENCHDIR)/ram_testbench.v && ./a.out
 
 alu:
-	iverilog not_0.v and_0.v or_0.v xor_0.v mux_0.v mux_16.v not_16.v and_16.v or_16.v or_16_way.v half_adder.v full_adder.v add_16.v alu.v alu_testbench.v && ./a.out
+	iverilog $(SOURCES) $(TESTBENCHDIR)/alu_testbench.v && ./a.out

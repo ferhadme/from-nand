@@ -1,4 +1,4 @@
-`include "assert.v"
+`include "testbench/assert.v"
 
 module or_16_way_testbench;
   reg [15:0] a;

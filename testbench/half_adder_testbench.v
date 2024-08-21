@@ -1,4 +1,4 @@
-`include "assert.v"
+`include "testbench/assert.v"
 
 module half_adder_testbench;
   reg a, b;

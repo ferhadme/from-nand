@@ -1,4 +1,4 @@
-`include "assert.v"
+`include "testbench/assert.v"
 
 module full_adder_testbench;
   reg a, b, cin;

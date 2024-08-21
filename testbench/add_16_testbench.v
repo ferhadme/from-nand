@@ -1,4 +1,4 @@
-`include "assert.v"
+`include "testbench/assert.v"
 
 module add_16_testbench;
   reg [15:0] a, b;
