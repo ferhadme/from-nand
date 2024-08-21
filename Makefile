@@ -37,6 +37,11 @@ full_adder:
 add16:
 	iverilog not_0.v and_0.v or_0.v xor_0.v half_adder.v full_adder.v add_16.v add_16_testbench.v && ./a.out
 
+register:
+	iverilog register.v register_testbench.v && ./a.out
+
+ram:
+	iverilog ram.v ram_testbench.v && ./a.out
 
 alu:
 	iverilog not_0.v and_0.v or_0.v xor_0.v mux_0.v mux_16.v not_16.v and_16.v or_16.v or_16_way.v half_adder.v full_adder.v add_16.v alu.v alu_testbench.v && ./a.out
