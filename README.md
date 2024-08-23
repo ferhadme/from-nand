@@ -1,6 +1,7 @@
 # from-nand
-Implementation of sample Arithmetic Logic Unit (ALU) specification in Verilog HDL built upon NAND logic gates.
+Implementation of sample Arithmetic Logic Unit (ALU) specification in Verilog HDL built upon NAND logic gates
 
+Additionally, a simple 8-addressed, 16-bit RAM is built using built-in Verilog HDL registers
 
 Sample specification is taken from [Nand2Tetris book](https://www.nand2tetris.org/_files/ugd/44046b_f0eaab042ba042dcb58f3e08b46bb4d7.pdf)
 
@@ -32,7 +33,7 @@ Function:  if zx         then x=0
            if out<0      then ng=1
                          else ng=0
 
-Comment:   Overflow is neither detected nor handled 
+Comment:   Overflow is neither detected nor handled
 ```
 
 ### Implementation dependency
