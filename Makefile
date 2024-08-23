@@ -2,7 +2,7 @@ LOGICDIR = logic
 ADDERDIR = adders
 MEMDIR = memory
 TESTBENCHDIR = testbench
-SOURCES = $(wildcard *.v) $(wildcard $(LOGICDIR)/*.v) $(wildcard $(ADDERDIR)/*.v) $(wildcard $(MEMDIR)/*.v)
+SOURCES = $(filter-out cpu_sim.v, $(wildcard *.v) $(wildcard $(LOGICDIR)/*.v) $(wildcard $(ADDERDIR)/*.v) $(wildcard $(MEMDIR)/*.v))
 
 not:
 	iverilog $(SOURCES) $(TESTBENCHDIR)/not_0_testbench.v && ./a.out
@@ -51,3 +51,6 @@ ram:
 
 alu:
 	iverilog $(SOURCES) $(TESTBENCHDIR)/alu_testbench.v && ./a.out
+
+simulate:
+	iverilog $(SOURCES) cpu_sim.v && ./a.out
